@@ -13,6 +13,7 @@
 		1B44D395293F51E800E05E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B44D393293F51E800E05E9E /* Main.storyboard */; };
 		1B44D397293F51E900E05E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B44D396293F51E900E05E9E /* Assets.xcassets */; };
 		1B44D39A293F51E900E05E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B44D398293F51E900E05E9E /* LaunchScreen.storyboard */; };
+		1B7B852C29406560009C3FBD /* OneTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B852A29406560009C3FBD /* OneTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1B44D396293F51E900E05E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B44D399293F51E900E05E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B44D39B293F51E900E05E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7B852A29406560009C3FBD /* OneTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1B44D38D293F51E800E05E9E /* AppDelegate.swift */,
 				1B44D38F293F51E800E05E9E /* SceneDelegate.swift */,
 				1B44D391293F51E800E05E9E /* ViewController.swift */,
+				1B7B852A29406560009C3FBD /* OneTableCell.swift */,
 				1B44D393293F51E800E05E9E /* Main.storyboard */,
 				1B44D396293F51E900E05E9E /* Assets.xcassets */,
 				1B44D398293F51E900E05E9E /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B44D392293F51E800E05E9E /* ViewController.swift in Sources */,
+				1B7B852C29406560009C3FBD /* OneTableCell.swift in Sources */,
 				1B44D38E293F51E800E05E9E /* AppDelegate.swift in Sources */,
 				1B44D390293F51E800E05E9E /* SceneDelegate.swift in Sources */,
 			);
