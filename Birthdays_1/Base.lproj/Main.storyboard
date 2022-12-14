@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="792.75362318840587" y="189.50892857142856"/>
         </scene>
-        <!--Новый -->
+        <!--Новый контакт-->
         <scene sceneID="co6-Cj-K6l">
             <objects>
-                <viewController id="6Io-E3-jY5" customClass="TwoViewController" customModule="Birthdays_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Io-E3-jY5" customClass="NewContactController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU1-dk-eLT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,15 +127,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZb-t6-dyh">
+                                <rect key="frame" x="20" y="292" width="254" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hFI-4S-u7w"/>
                         <color key="backgroundColor" red="0.45433627157792966" green="0.75821038147415776" blue="0.73186016384515373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Новый " id="b9u-vp-46k"/>
+                    <navigationItem key="navigationItem" title="Новый контакт" id="b9u-vp-46k"/>
                     <connections>
                         <outlet property="dataRozhdeniyaText" destination="DZV-ZE-qMh" id="WQe-2k-hbY"/>
                         <outlet property="familiyaText" destination="CTa-MP-Pjc" id="eO3-IW-0Ux"/>
                         <outlet property="imageOneView" destination="yrs-Qz-HcQ" id="Eyn-Ef-dPf"/>
+                        <outlet property="label_01" destination="sZb-t6-dyh" id="LAh-Gt-EOl"/>
                         <outlet property="samButton" destination="Ybp-hl-O9K" id="rki-In-wZ8"/>
                     </connections>
                 </viewController>
