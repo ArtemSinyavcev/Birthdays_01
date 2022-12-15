@@ -9,9 +9,9 @@ import UIKit
 
 class OneTableCell: UITableViewCell {
 
-    @IBOutlet weak var dataTable: UILabel!
-    @IBOutlet weak var nameTable: UILabel!
-    @IBOutlet weak var imageTable: UIImageView!
+    @IBOutlet weak var dataTableLabel: UILabel!
+    @IBOutlet weak var nameTableLabel: UILabel!
+    @IBOutlet weak var fotoTableImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

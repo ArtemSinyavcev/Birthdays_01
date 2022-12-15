@@ -42,10 +42,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: idTable) as! OneTableCell
-        cell.dataTable.text = "17 января 1991 г."
-        cell.nameTable.text = "Синявцев Артем"
-        cell.imageTable.image = UIImage(named: "smoke1")
-        cell.imageTable.layer.cornerRadius = 40
+        cell.dataTableLabel.text = "17 января 1991 г."
+        cell.nameTableLabel.text = "Синявцев Артем"
+        cell.fotoTableImageView.image = UIImage(named: "smoke1")
+        cell.fotoTableImageView.layer.cornerRadius = 40
         cell.textLabel?.text = String(indexPath.item)
         
         return cell
