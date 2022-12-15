@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TwoViewController: UIViewController {
+class NewContactController: UIViewController {
 
     @IBOutlet weak var dataTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
@@ -20,9 +20,10 @@ class TwoViewController: UIViewController {
 
     }
 
+   
+    
     @IBAction func addButtonAction(_ sender: UIButton) {
-        
-        let text = nameTextField.text
+    let text = nameTextField.text
         surnameNameLabel.text = text
        
     }
