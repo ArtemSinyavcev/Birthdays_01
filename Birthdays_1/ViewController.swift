@@ -14,13 +14,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
       
         tableView.dataSource = self
         tableView.delegate = self
-        
         
             // добавление БОЛЬШОГО Navigation Bar
         self.navigationController?.navigationBar.prefersLargeTitles = true
@@ -31,25 +29,23 @@ class ViewController: UIViewController {
         
     }
 
-
 }
-
-
-
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        return 1
+        
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: idTable) as! OneTableCell
-        cell.dataTable.text = "17 января 1991 г."
-        cell.nameTable.text = "Синявцев Артем"
-        cell.imageTable.image = UIImage(named: "smoke1")
-        cell.imageTable.layer.cornerRadius = 40
+        cell.dataTableLabel.text = "17 января 1991 г."
+        cell.nameTableLabel.text = "Синявцев Артем"
+        cell.fotoTableImageView.image = UIImage(named: "smoke1")
+        cell.fotoTableImageView.layer.cornerRadius = 40
         cell.textLabel?.text = String(indexPath.item)
         
         return cell
@@ -57,14 +53,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
              // ВЫСОТА ЯЧЕЙКИ (heightForRowAt)
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return 100.0
+        
     }
    
-    
 }
-
-
-
 
 extension ViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
