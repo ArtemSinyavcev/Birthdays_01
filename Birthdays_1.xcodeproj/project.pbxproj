@@ -16,6 +16,7 @@
 		1B4E35F92948BF0C0052B7F9 /* DataHuman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E35F82948BF0C0052B7F9 /* DataHuman.swift */; };
 		1B59248229425C14007CBB83 /* NewContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B59248129425C14007CBB83 /* NewContactController.swift */; };
 		1B7B852C29406560009C3FBD /* OneTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B852A29406560009C3FBD /* OneTableCell.swift */; };
+		1B83F8F329562148007AAF03 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B83F8F229562148007AAF03 /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B4E35F82948BF0C0052B7F9 /* DataHuman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHuman.swift; sourceTree = "<group>"; };
 		1B59248129425C14007CBB83 /* NewContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactController.swift; sourceTree = "<group>"; };
 		1B7B852A29406560009C3FBD /* OneTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableCell.swift; sourceTree = "<group>"; };
+		1B83F8F229562148007AAF03 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1B7B852A29406560009C3FBD /* OneTableCell.swift */,
 				1B4E35F82948BF0C0052B7F9 /* DataHuman.swift */,
 				1B44D393293F51E800E05E9E /* Main.storyboard */,
+				1B83F8F229562148007AAF03 /* Singleton.swift */,
 				1B44D396293F51E900E05E9E /* Assets.xcassets */,
 				1B44D398293F51E900E05E9E /* LaunchScreen.storyboard */,
 				1B44D39B293F51E900E05E9E /* Info.plist */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B59248229425C14007CBB83 /* NewContactController.swift in Sources */,
+				1B83F8F329562148007AAF03 /* Singleton.swift in Sources */,
 				1B4E35F92948BF0C0052B7F9 /* DataHuman.swift in Sources */,
 				1B44D392293F51E800E05E9E /* ViewController.swift in Sources */,
 				1B7B852C29406560009C3FBD /* OneTableCell.swift in Sources */,

@@ -6,14 +6,18 @@
 //
 
 import Foundation
-import UIKit
-
 
 struct Human{
     
-    var name: String
-    var data: String
-    var age: Int
-    var image: UIImage
+    var name: String?
+    var date: String?
+    //var image: UIImage?
+    
+    init(name: String?, date: String?) {//, image: UIImage?){
+        self.name = name
+        self.date = date
+        // self.image = image
+        
+    }
     
 }

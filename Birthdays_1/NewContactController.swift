@@ -8,24 +8,21 @@
 import UIKit
 
 class NewContactController: UIViewController {
-
-    @IBOutlet weak var dataTextField: UITextField!
+    
+    @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var imageAddImageView: UIImageView!
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var surnameNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
-   
     
     @IBAction func addButtonAction(_ sender: UIButton) {
-    let text = nameTextField.text
-        surnameNameLabel.text = text
-       
+        Singleton.shared.massiv.append(Human(name: nameTextField.text, date: dateTextField.text))
+        navigationController?.popViewController(animated: true)
+        
     }
     
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     let idTable = "iDTable"
     var poisk = UISearchController()
     
@@ -16,53 +16,61 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         tableView.dataSource = self
         tableView.delegate = self
-        
-            // добавление БОЛЬШОГО Navigation Bar
+        tableView.reloadData()
+        // добавление БОЛЬШОГО Navigation Bar
         self.navigationController?.navigationBar.prefersLargeTitles = true
-            // добавление СТРОКИ ПОИСКА, расширяем класс через extension(ниже) и создаем переменную (выше)
+        // добавление СТРОКИ ПОИСКА, расширяем класс через extension(ниже) и создаем переменную (выше)
         poisk = UISearchController(searchResultsController: nil)
         poisk.searchResultsUpdater = self
         self.navigationItem.searchController = poisk
         
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        tableView.reloadData()
+        
+    }
+    
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
-    
+extension ViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 1
+        return Singleton.shared.massiv.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: idTable) as! OneTableCell
-        cell.dataTableLabel.text = "17 января 1991 г."
-        cell.nameTableLabel.text = "Синявцев Артем"
-        cell.fotoTableImageView.image = UIImage(named: "smoke1")
-        cell.fotoTableImageView.layer.cornerRadius = 40
-        cell.textLabel?.text = String(indexPath.item)
-        
+        cell.dateTableLabel.text = Singleton.shared.massiv[indexPath.row].date
+        cell.nameTableLabel.text = Singleton.shared.massiv[indexPath.row].name
+        cell.backgroundColor = .systemGray6
+        cell.fotoTableImageView.image = UIImage(named: "image")
+        //cell.fotoTableImageView.layer.cornerRadius = 40
+        cell.textLabel?.text = String(indexPath.item + 1)
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         return cell
+        
     }
     
-             // ВЫСОТА ЯЧЕЙКИ (heightForRowAt)
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("нажал добавить\(indexPath.row)")
         
+    }
+    
+    // ВЫСОТА ЯЧЕЙКИ (heightForRowAt)
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
         
     }
-   
 }
 
 extension ViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
-         
+        
     }
-
+    
 }

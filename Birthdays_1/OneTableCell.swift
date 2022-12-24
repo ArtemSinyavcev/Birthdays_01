@@ -8,19 +8,19 @@
 import UIKit
 
 class OneTableCell: UITableViewCell {
-
-    @IBOutlet weak var dataTableLabel: UILabel!
+    
+    @IBOutlet weak var dateTableLabel: UILabel!
     @IBOutlet weak var nameTableLabel: UILabel!
     @IBOutlet weak var fotoTableImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
+    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
     }
     
 }
